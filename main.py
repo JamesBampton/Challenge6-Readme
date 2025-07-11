@@ -38,7 +38,7 @@ questions = [
     {
         'type': 'confirm',
         'name': 'confirm',
-        'message': 'Do you like Python?',
+        'message': 'Save File?',
         'default': True,
     }
 ]
@@ -47,5 +47,21 @@ questions = [
 # Could make this a module
 
 answers = prompt(questions)
+qLength = len(answers)
+print(answers)
+print(qLength)
 # add a loop here to go through the answers 
 print(f"Project title is , {answers['title']}!")
+
+with open("readme-jb.txt", "w") as f:
+        f.write(str(answers))
+
+
+""" i=0
+for i in answers:
+    with open("readme-jb.txt", "w") as f:
+        f.write([answers['title']])
+    
+    with open("readme-jb.md", "w") as f:
+        f.write([answers['title']]) """
+    
