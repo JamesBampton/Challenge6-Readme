@@ -35,12 +35,6 @@ questions = [
         'name': 'contact',
         'message': 'Add contact information',
     },
-    {
-        'type': 'confirm',
-        'name': 'confirm',
-        'message': 'Save File?',
-        'default': True,
-    }
 ]
 
 
@@ -52,16 +46,8 @@ print(answers)
 print(qLength)
 # add a loop here to go through the answers 
 print(f"Project title is , {answers['title']}!")
-
-with open("readme-jb.txt", "w") as f:
-        f.write(str(answers))
-
-
-""" i=0
-for i in answers:
-    with open("readme-jb.txt", "w") as f:
-        f.write([answers['title']])
     
-    with open("readme-jb.md", "w") as f:
-        f.write([answers['title']]) """
-    
+        
+for value in answers.values():
+    with open("readme-jb.txt", "a") as f:
+        f.write(str(value))

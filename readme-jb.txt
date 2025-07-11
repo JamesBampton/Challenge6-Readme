@@ -1,1 +1,1 @@
-{'title': 'r', 'desc': 'r', 'install': 'r', 'usage': 'r', 'license': 'Yes', 'contact': 'r', 'confirm': True}
+gReadmeThats lifeDont bothersparinglyYes05444
