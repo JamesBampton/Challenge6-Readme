@@ -1,7 +1,5 @@
-#import PyInquirer
-#import collections.abc
 from PyInquirer import prompt
-#from collections.abc import Mapping
+
 # List of dictionaries questions[0-x]
 questions = [
     {
@@ -40,7 +38,7 @@ questions = [
 answers = prompt(questions) # Place the answers from the quesion prompts into 
 print (answers) #answers = {'Project': 'A', 'Description': 'B', 'Install': 'C', 'Usage': 'D', 'License': 'Yes', 'Contact': 'E'}
         
-with open("readme-jb.txt", "a") as f:
+with open("README.md", "a") as f:
     for key, value in answers.items(): #
          f.write(f"## {key}\n{value}\n")
         
