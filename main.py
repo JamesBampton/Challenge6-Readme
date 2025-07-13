@@ -37,17 +37,32 @@ questions = [
     },
 ]
 
-
 # Could make this a module
-
 answers = prompt(questions)
-qLength = len(answers)
-print(answers)
-print(qLength)
+#qLength = len(answers)
+#print(answers)
+#print(qLength)
 # add a loop here to go through the answers 
-print(f"Project title is , {answers['title']}!")
+#print(f"Project title is , {answers['title']}!")
+#print(f"Project description is , {answers['desc']}!")
     
         
 for value in answers.values():
+    
+    
+    
+    
+    
+    
+    #text = value
     with open("readme-jb.txt", "a") as f:
-        f.write(str(value))
+        #f.write(f"##{answers['title']}\n")
+        f.write((str('##')))
+        f.write(f"##{answers['title']}\n")
+        f.write((str(value)))
+        #f.write('\n')
+        #f.write(text)
+        
+        #for key in answers.keys():
+        #    f.write(f"# {key}\n")
+        
