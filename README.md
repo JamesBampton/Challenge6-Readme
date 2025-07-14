@@ -1,32 +1,22 @@
 ## Project
 
-Readme project
-
----
+1
 
 ## Description
 
-this will create a readme file that can be reused on all future products. Giving me the edge when potential headhunters are looking for someone who really cares about the end user
-
----
+2
 
 ## Install
 
-run this and trun that
-
----
+3
 
 ## Usage
 
-Sparinlgy
-
----
+d
 
 ## License
 
-Windows
-
----
+Yes
 
 ## Contact
 
