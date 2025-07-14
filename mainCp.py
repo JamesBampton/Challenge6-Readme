@@ -1,5 +1,4 @@
 from PyInquirer import prompt
-from my_module import greet
 
 # List of dictionaries questions[0-x]
 questions = [
@@ -35,8 +34,6 @@ questions = [
         'message': 'Add contact information',
     },
 ]
-
-print(greet("Jim"))
 
 answers = prompt(questions) # Place the answers from the quesion prompts into 
 print (answers) #answers = {'Project': 'A', 'Description': 'B', 'Install': 'C', 'Usage': 'D', 'License': 'Yes', 'Contact': 'E'}

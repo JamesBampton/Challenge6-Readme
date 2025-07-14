@@ -1,1 +1,1 @@
-InquirerPy
+PyInquirer
