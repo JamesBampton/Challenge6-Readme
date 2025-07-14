@@ -6,13 +6,14 @@ def chat():
     {
         'type': 'input',
         'name': 'Intro',
-        'message': 'Hello user who loves to document everything, can you please tell me you name?',
+        'message': 'Hello dear user who loves to document everything, can you please tell me your name?',
     },
     ]
     
     result = prompt(introduction)
     
-    for key, value in result.items(): #
-         print(f"Hello {value} please answer the following questions to create a readme file.\n")
+    for key, value in result.items():
+         print(f".....\n....\n...\nHello {value} let's create a readme file.\n")
+         print(key)
          
          

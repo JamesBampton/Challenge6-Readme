@@ -1,7 +1,7 @@
 from PyInquirer import prompt
 
 def greet(name):
-    return f"Hello, {name}"
+    print(f"\nThanks for your assistance, goodbye,{name}")
 
 
 def myPrompt():
@@ -40,9 +40,13 @@ def myPrompt():
     },
 ]   
     
-    answers = prompt(questions) # Place the answers from the quesion prompts into 
-    print (answers) #answers = {'Project': 'A', 'Description': 'B', 'Install': 'C', 'Usage': 'D', 'License': 'Yes', 'Contact': 'E'}
+    while True:
+        answers = prompt(questions) # Place the answers from the quesion prompts into 
+        if answers.strip():
+            break
+        print("Input cannot be left empty. Please try again")
+        print (answers) #answers = {'Project': 'A', 'Description': 'B', 'Install': 'C', 'Usage': 'D', 'License': 'Yes', 'Contact': 'E'}
         
-    with open("README.md", "a") as f:
-        for key, value in answers.items(): #
-         f.write(f"## {key}\n{value}\n")    
+        with open("README.md", "a") as f:
+            for key, value in answers.items(): #
+                f.write(f"## {key}\n{value}\n")    
