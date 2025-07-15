@@ -1,7 +1,7 @@
 from PyInquirer import prompt
 from datetime import *
 
-
+# Open a dialogue with user via chat method to get user name to add to document
 def chat():
     
     introduction = [
@@ -17,15 +17,11 @@ def chat():
     print(f".....\n....\n...\nLet's create a readme file.\n")
 
     result = prompt(introduction)
-    print(result)
-    
     for key, value in result.items():
          print(f".....\n....\n...\nHello {value} let's create a readme file.\n")
-         print(key)
-         
-         with open("README.md", "a") as f:
+    with open("README.md", "a") as f:
            #for key, value in introduction.items():
-                today = datetime.today()
+                today = datetime.today() # Get todays date to add to document to show when created
                 f.write(f"Document Created by {value} on {today} \n\n---\n\n")
           
          

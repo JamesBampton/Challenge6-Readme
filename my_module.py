@@ -1,13 +1,10 @@
 from PyInquirer import prompt
 from rich.console import Console
-from rich.prompt import Prompt # Cant get this to work - dont think it does for prompt values
 
 console = Console()
 
-
-def greet(name):
-    console.print(f"\n[bold cyan]Thanks for your assistance, goodbye, [/bold cyan][bold red]{name}[/bold red]")
-
+def greet():
+    console.print(f"\n[bold cyan]Thanks for documentation, goodbye. [/bold cyan]")
 
 def myPrompt():
    
